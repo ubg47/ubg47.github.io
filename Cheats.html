@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA Vice City Cheats</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  background: #10121b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.cheats-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cheats-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cheats-header h2 {
+  color: #ffbd42;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+#search {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #343746;
+  border-radius: 10px;
+  background: #1b1e2b;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+#search:focus {
+  border-color: #ffbd42;
+}
+
+#counter {
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+.cheat-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #191c28;
+}
+
+.cheat-table th {
+  background: #252938;
+  color: #ffbd42;
+  text-align: left;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.cheat-table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #2b2e3b;
+  line-height: 1.5;
+}
+
+.cheat-table tr:last-child td {
+  border-bottom: none;
+}
+
+.cheat-table tbody tr:hover {
+  background: #252938;
+}
+
+.cheat-name {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.cheat-code {
+  color: #ffcf70;
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.cheat-description {
+  color: #aaa;
+  font-size: 13px;
+  min-width: 250px;
+}
+
+.copy-btn {
+  background: #ffbd42;
+  color: #151515;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.copy-btn:hover {
+  background: #ffd477;
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 30px;
+  color: #999;
+}
+
+@media(max-width:600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .cheat-table th,
+  .cheat-table td {
+    padding: 11px 9px;
+    font-size: 12px;
+  }
+
+  .cheat-description {
+    min-width: 200px;
+  }
+
+  .cheat-code {
+    font-size: 11px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="cheats-container">
+
+  <div class="cheats-header">
+    <h2>GTA Vice City Cheats</h2>
+  </div>
+
+
+
+  <div id="counter"></div>
+
+  <div class="table-wrapper">
+  <table class="cheat-table">
+    <thead>
+      <tr>
+        <th>Cheat</th>
+        <th>Code</th>
+        <th>Description</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="cheatList">
+
+      <tr data-category="weapons">
+        <td class="cheat-name">Weapon Set 1</td>
+        <td class="cheat-code">THUGSTOOLS</td>
+        <td class="cheat-description">Gives you a basic collection of weapons, including a pistol, shotgun and melee weapons.</td>
+      </tr>
+      <tr data-category="weapons">
+        <td class="cheat-name">Weapon Set 2</td>
+        <td class="cheat-code">PROFESSIONALTOOLS</td>
+        <td class="cheat-description">Gives you a professional weapon collection, including a sniper rifle, assault rifle and heavy weapons.</td>
+      </tr>
+      <tr data-category="weapons">
+        <td class="cheat-name">Weapon Set 3</td>
+        <td class="cheat-code">NUTTERTOOLS</td>
+        <td class="cheat-description">Gives you a collection of powerful heavy weapons, including a minigun, rocket launcher and flamethrower.</td>
+      </tr>
+
+      <tr data-category="player">
+        <td class="cheat-name">Full Health</td>
+        <td class="cheat-code">ASPIRINE</td>
+        <td class="cheat-description">Instantly restores your character's health to full.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Full Body Armor</td>
+        <td class="cheat-code">PRECIOUSPROTECTION</td>
+        <td class="cheat-description">Fills your body armor to maximum, providing extra protection from damage.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Instant Death</td>
+        <td class="cheat-code">ICANTTAKEITANYMORE</td>
+        <td class="cheat-description">Immediately kills your character.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Lower Wanted Level</td>
+        <td class="cheat-code">LEAVEMEALONE</td>
+        <td class="cheat-description">Removes your current wanted level and gets rid of police attention.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Raise Wanted Level</td>
+        <td class="cheat-code">YOUWONTTAKEMEALIVE</td>
+        <td class="cheat-description">Increases your wanted level, bringing more police after you.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Ladies' Man</td>
+        <td class="cheat-code">FANNYMAGNET</td>
+        <td class="cheat-description">Makes female pedestrians attracted to Tommy and follow him around.</td>
+      </tr>
+
+      <tr data-category="vehicles">
+        <td class="cheat-name">Cars Drive on Water</td>
+        <td class="cheat-code">SEAWAYS</td>
+        <td class="cheat-description">Allows your vehicles to drive across the surface of water.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Better Handling</td>
+        <td class="cheat-code">GRIPISEVERYTHING</td>
+        <td class="cheat-description">Improves vehicle handling, making cars easier to control and corner.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Flying Cars</td>
+        <td class="cheat-code">COMEFLYWITHME</td>
+        <td class="cheat-description">Allows cars to fly through the air when they gain enough speed.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Car Explosion</td>
+        <td class="cheat-code">BIGBANG</td>
+        <td class="cheat-description">Causes nearby vehicles to explode.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Bloodring Banger</td>
+        <td class="cheat-code">TRAVELINSTYLE</td>
+        <td class="cheat-description">Spawns a Bloodring Banger demolition derby car.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Bloodring Racer</td>
+        <td class="cheat-code">GETTHEREQUICKLY</td>
+        <td class="cheat-description">Spawns a Bloodring Racer vehicle.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Golf Caddy</td>
+        <td class="cheat-code">BETTERTHANWALKING</td>
+        <td class="cheat-description">Spawns a golf caddy that you can drive around the city.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Hotring Racer 1</td>
+        <td class="cheat-code">GETTHEREVERYFASTINDEED</td>
+        <td class="cheat-description">Spawns a fast Hotring Racer racing car.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Hotring Racer 2</td>
+        <td class="cheat-code">GETTHEREAMAZINGLYFAST</td>
+        <td class="cheat-description">Spawns another Hotring Racer with a different racing livery.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Love Fist Limo</td>
+        <td class="cheat-code">ROCKANDROLLCAR</td>
+        <td class="cheat-description">Spawns the Love Fist limousine.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Rhino Tank</td>
+        <td class="cheat-code">PANZER</td>
+        <td class="cheat-description">Spawns a powerful military tank equipped with a cannon.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Romero's Hearse</td>
+        <td class="cheat-code">THELASTRIDE</td>
+        <td class="cheat-description">Spawns a Romero's hearse funeral vehicle.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Sabre Turbo</td>
+        <td class="cheat-code">GETTHEREFAST</td>
+        <td class="cheat-description">Spawns a Sabre Turbo sports car.</td>
+      </tr>
+      <tr data-category="vehicles">
+        <td class="cheat-name">Trashmaster</td>
+        <td class="cheat-code">RUBBISHCAR</td>
+        <td class="cheat-description">Spawns a large garbage collection truck.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Candy Suxxx</td>
+        <td class="cheat-code">IWANTBIGTITS</td>
+        <td class="cheat-description">Changes Tommy's appearance into Candy Suxxx.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Ken Rosenberg</td>
+        <td class="cheat-code">MYSONISALAWYER</td>
+        <td class="cheat-description">Changes Tommy's appearance into Ken Rosenberg.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Lance Vance</td>
+        <td class="cheat-code">LOOKLIKELANCE</td>
+        <td class="cheat-description">Changes Tommy's appearance into Lance Vance.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Love Fist 1</td>
+        <td class="cheat-code">ROCKANDROLLMAN</td>
+        <td class="cheat-description">Changes Tommy's appearance into a member of the Love Fist band.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Love Fist 2</td>
+        <td class="cheat-code">WELOVEOURDICK</td>
+        <td class="cheat-description">Changes Tommy's appearance into another Love Fist band member.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Mercedes</td>
+        <td class="cheat-code">FOXYLITTLETHING</td>
+        <td class="cheat-description">Changes Tommy's appearance into Mercedes.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Phil Cassady</td>
+        <td class="cheat-code">ONEARMEDBANDIT</td>
+        <td class="cheat-description">Changes Tommy's appearance into Phil Cassidy.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Ricardo Diaz</td>
+        <td class="cheat-code">CHEATSHAVEBEENCRACKED</td>
+        <td class="cheat-description">Changes Tommy's appearance into Ricardo Diaz.</td>
+      </tr>
+      <tr data-category="player">
+        <td class="cheat-name">Sonny Forelli</td>
+        <td class="cheat-code">IDONTHAVETHEMONEYSONNY</td>
+        <td class="cheat-description">Changes Tommy's appearance into Sonny Forelli.</td>
+      </tr>
+
+      <tr data-category="weather">
+        <td class="cheat-name">Sunny Weather</td>
+        <td class="cheat-code">ALOVELYDAY</td>
+        <td class="cheat-description">Changes the weather to bright, sunny conditions with clear skies.</td>
+      </tr>
+      <tr data-category="weather">
+        <td class="cheat-name">Stormy Weather</td>
+        <td class="cheat-code">CATSANDDOGS</td>
+        <td class="cheat-description">Changes the weather to heavy rain and stormy conditions.</td>
+      </tr>
+      <tr data-category="weather">
+        <td class="cheat-name">Foggy Weather</td>
+        <td class="cheat-code">CANTSEEATHING</td>
+        <td class="cheat-description">Creates thick fog, reducing visibility around the city.</td>
+      </tr>
+      <tr data-category="weather">
+        <td class="cheat-name">Overcast Weather</td>
+        <td class="cheat-code">APLEASANTDAY</td>
+        <td class="cheat-description">Changes the weather to cloudy, overcast conditions.</td>
+      </tr>
+
+      <tr data-category="world">
+        <td class="cheat-name">Pedestrians Riot</td>
+        <td class="cheat-code">FIGHTFIGHTFIGHT</td>
+        <td class="cheat-description">Makes pedestrians around the city fight each other.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Pedestrians Attack You</td>
+        <td class="cheat-code">NOBODYLIKESME</td>
+        <td class="cheat-description">Makes pedestrians become hostile and attack Tommy.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Pedestrians Carry Weapons</td>
+        <td class="cheat-code">OURGODGIVENRIGHTTOBEARARMS</td>
+        <td class="cheat-description">Gives pedestrians weapons, making the streets more dangerous.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Slow Motion</td>
+        <td class="cheat-code">BOOOOOORING</td>
+        <td class="cheat-description">Slows down gameplay, making everything move in slow motion.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Fast Motion</td>
+        <td class="cheat-code">ONSPEED</td>
+        <td class="cheat-description">Speeds up gameplay, making characters and vehicles move faster.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Quick Clock</td>
+        <td class="cheat-code">LIFEISPASSINGMEBY</td>
+        <td class="cheat-description">Makes the in-game clock run much faster.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Black Vehicles</td>
+        <td class="cheat-code">IWANTITPAINTEDBLACK</td>
+        <td class="cheat-description">Changes the colour of vehicles around the city to black.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Pink Vehicles</td>
+        <td class="cheat-code">AHAIRDRESSERSCAR</td>
+        <td class="cheat-description">Changes the colour of vehicles around the city to pink.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">All Traffic Lights Green</td>
+        <td class="cheat-code">GREENLIGHT</td>
+        <td class="cheat-description">Changes traffic lights to green, allowing vehicles to keep moving.</td>
+      </tr>
+      <tr data-category="world">
+        <td class="cheat-name">Invisible Cars</td>
+        <td class="cheat-code">WHEELSAREALLINEED</td>
+        <td class="cheat-description">Makes most of the vehicle body invisible, leaving the wheels visible.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</body>
+</html>
